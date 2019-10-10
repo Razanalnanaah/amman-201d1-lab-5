@@ -30,7 +30,11 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { 
     var c =a*b;
+<<<<<<< HEAD
     return [c, ' The product of ' + a + ' and ' + b + ' is ' + c +'.']
+=======
+    return [' The product of ' + a + ' and ' + b + ' is ' + c +'.']
+>>>>>>> lab005
     
     
     //eslint-disable-line
