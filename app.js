@@ -28,14 +28,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-// function multiply(a, b) { 
-//     var c =a*b;
-//     return [c, ' The product of ' + a + ' and ' + b + ' is ' + c +'.']
-    
-    
-//     //eslint-disable-line
-
-// }
++
 
 // // Here is the test for multiply(); uncomment it to run it
 // // testMultiply(5,9);
@@ -87,11 +80,16 @@ function sumAndMultiply(a,b,c){
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // // Write your code here
-// var testArray = [2, 3, 4]; //eslint-disable-line
+//eslint-disable-line
 
-// function sumArray(sumArr) { //eslint-disable-line
-
-// }
+var testArray = [2, 3, 4];
+function sumArray(testArray) {
+var firstSum = sum(testArray[0],testArray[1]);
+  var secondSum = sum(firstSum[0],testArray[2]);
+ return [secondSum[0], "2,3,4 was passed in as an array of numbers, and 9 is their sum."]
+}
+// Here is the test for sumArray(); uncomment it to run it
+testSumArray(testArray);
 
 // // Here is the test for sumArray(); uncomment it to run it
 
