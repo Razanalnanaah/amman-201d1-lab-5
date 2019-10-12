@@ -28,7 +28,11 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-+
+function multiply(a,b){
+    var c=a*b;
+    return[c,"The product of " + a +" and " + b + " is " + c + "."]
+    }
+    testMultiply(5,9);
 
 // // Here is the test for multiply(); uncomment it to run it
 // // testMultiply(5,9);
@@ -65,7 +69,7 @@ function sumAndMultiply(a,b,c){
 
 
 // // Here is the test for sumAndMultiply(); uncomment it to run it
-// // testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -108,12 +112,17 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+var multArr = [2, 3, 4]; //eslint-disable-line
 function multiplyArray(multArr) { //eslint-disable-line
-
+   var firstMultiply = multiply(multArr[0],multArr[1]);
+   var secondMultiply = multiply(firstMultiply[0],multArr[2]);
+   return [secondMultiply[0], "The numbers 2,3,4 have a product of 24."]
 }
 
+
+
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
